@@ -9,7 +9,6 @@ const options = {
 export async function getActiveStock(){
     const url = 'https://yahoo-finance166.p.rapidapi.com/api/market/get-most-actives?quote_type=EQUITY&offset=0&count=30&region=US&language=en-US';
 
-    return 0;
     try {
         const response = await fetch(url, options);
         const result = await response.json();
@@ -23,7 +22,6 @@ export async function getActiveStock(){
 
 export async function getDayGainers(){
     const url = 'https://yahoo-finance166.p.rapidapi.com/api/market/get-day-gainers?offset=0&region=US&count=30&language=en-US&quote_type=EQUITY';
-    return 0;
     try {
         const response = await fetch(url, options);
         const result = await response.json();
@@ -38,7 +36,6 @@ export async function getDayGainers(){
 export async function getDayLosers(){
     const url = 'https://yahoo-finance166.p.rapidapi.com/api/market/get-day-losers?offset=0&language=en-US&region=US&count=30&quote_type=EQUITY';
 
-    return 0;
     try {
         const response = await fetch(url, options);
         const result = await response.json();
