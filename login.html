@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <title>Login</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-section">   
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">  
+                    <img src="images/TradeFolio.png" alt="LoginImage">
+                </a>
+            </div>
+            <div class="right-section">
+                <h2>Login</h2>
+                <br><br>
+                <form id="login-form">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                    <input type="password" id="login-password" placeholder="Password" required>   
+
+                    <div class="navigation">
+                        <button type="submit">Login</button>
+                    </div>
+                    <div class="Google">
+                        <button id="google-sign-up" type="button">
+                            <img src="images/google-logo.png" alt="Google Logo" style="width: 30px; height: 30px; margin-right: 10px;">
+                            Login with Google
+                        </button>
+                    </div>
+                    <p><a href="forgotpassword.html">Forgot Password?</a></p>
+                </form>
+                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            </div>
+        </div>
+        <script type="module" src="./scripts/login.js"></script>
+    </body>
+</html>

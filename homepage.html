@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles/homepage.css">
+</head>
+    <body>
+        <header class="header">
+            <a class="header__link" href="/">TradeFolio</a>
+            
+            <div class="right">
+                <a class ="about__link" href="./about.html">About</a>
+                
+                <div class="dropdown">
+                    <div id="avatar-wrap" class="dropbtn">
+
+                    </div>
+                    <ul class="dropdown-content">
+                        <li>
+                            <p id="email"></p>
+                        </li>
+                        <li class="logout__container">
+                            <div class="button-wrap">
+                                <button id="logout">Sign Out</button>
+                            </div>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <hr class="solid">
+
+        <div class="container">
+
+        
+        <div>
+            <h2 class="greeting">
+                
+            </h2>
+
+            <div >
+                <a href="./graph/index.html" >
+                    <button class="graph-button">Click here to View Graph</button>
+                </a>
+            </div>
+
+        </div>
+
+        <h3>Stocks</h3>
+
+        <div class="button-container">
+            <button name="active" class="table-button active-button">
+                Most Active
+            </button>
+            <button name="gainer" class="table-button gainer-button">
+                Top Gainers
+            </button>
+            <button name="loser" class="table-button loser-button">
+                Top Losers
+            </button>
+        </div>
+
+        </div>
+
+        <table class="table">
+            <thead>
+              <th>Symbol</th>
+              <th>Price</th>
+              <th>Change %</th>
+              <th>Volume</th>
+              <th>Avg Volume</th>
+            </thead>
+            <tbody class="table-body">
+
+            </tbody>    
+        </table>
+
+
+    <script type="module" src="./scripts/homepage.js"></script>
+    </body>
+</html>
